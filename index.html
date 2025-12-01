@@ -6,16 +6,52 @@
     <title>Learn Tailwind</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="bg-[url('/photo/bg-pppp.jpeg')] bg-no-repeat bg-cover h-[100vh]">
     <nav>
-      <ul>
-        <li><a href="#">Ridwan</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul
+        id="menuHide"
+        class="flex flex-col fixed top-0 right-0 z-[999] justify-start items-start w-[250px] h-[100vh] bg-slate-50 backdrop-blur-[10px] bg-opacity-50"
+        class="flex-none justify-end bg-gray-950 text-white"
+      >
+        <li onclick="closeBar()" class="mr-auto">
+          <a href="#" class="px-7 flex items-center h-[50px]"
+            ><img
+              style="width: 26px; height: 26px; background-color: red"
+              src="photo/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Home</a></li>
+        <li>
+          <a href="#" class="px-7 flex items-center h-[50px]">Services</a>
+        </li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Product</a></li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Blog</a></li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Contact</a></li>
       </ul>
     </nav>
+    <nav>
+      <ul class="flex justify-end bg-gray-950 text-white">
+        <li class="mr-auto">
+          <a href="#" class="px-7 flex items-center h-[50px]">Ridwan</a>
+        </li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Home</a></li>
+        <li>
+          <a href="#" class="px-7 flex items-center h-[50px]">Services</a>
+        </li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Product</a></li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Blog</a></li>
+        <li><a href="#" class="px-7 flex items-center h-[50px]">Contact</a></li>
+        <li>
+          <a href="#" class="px-7 flex items-center h-[50px]"
+            ><img
+              style="width: 26px; height: 26px; background-color: green"
+              src="photo/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <script src="about.js"></script>
   </body>
 </html>

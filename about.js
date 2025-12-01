@@ -1,8 +1,8 @@
- function sideBar () {
-   const bar =  document.querySelector("#bar")
-   bar.style.display = 'none'
- }
- function openbar () {
-   const bar =  document.querySelector("#closBar")
-   bar.style.display = 'flex'
- }
+function closeBar() {
+  const closeBar = document.querySelector("#menuHide")
+  closeBar.style.display = 'none'
+}
+function closeBar() {
+  const closeBar = document.querySelector("#menuHide")
+  closeBar.style.display = 'none'
+}
