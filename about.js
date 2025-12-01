@@ -2,7 +2,7 @@ function closeBar() {
   const closeBar = document.querySelector("#menuHide")
   closeBar.style.display = 'none'
 }
-function closeBar() {
+function openSidebar() {
   const closeBar = document.querySelector("#menuHide")
-  closeBar.style.display = 'none'
+  closeBar.style.display = 'flex'
 }
