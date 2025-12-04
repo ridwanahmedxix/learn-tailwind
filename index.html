@@ -1,10 +1,136 @@
 <!DOCTYPE html>
-<html class="scroll-smooth snap-both" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Tailwind</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>ChocoDelight</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="bg-gradient-to-b from-yellow-50 to-yellow-100 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-brown-700 text-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">ChocoDelight</h1>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+          <li>
+            <a href="#products" class="hover:text-yellow-300">Products</a>
+          </li>
+          <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-brown-500 text-white h-screen flex flex-col justify-center items-center text-center px-4"
+    >
+      <h2 class="text-5xl font-extrabold mb-4">
+        Indulge in the Sweetest Chocolates
+      </h2>
+      <p class="text-xl mb-6">
+        Handcrafted chocolates made with love and passion.
+      </p>
+      <a
+        href="#products"
+        class="bg-yellow-400 text-brown-700 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+        >Explore Products</a
+      >
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-yellow-50">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h3 class="text-4xl font-bold text-brown-700 mb-10">Our Products</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-brown-100 rounded-xl p-6 shadow-lg hover:scale-105 transition"
+          >
+            <div
+              class="w-24 h-24 bg-brown-300 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-brown-700"
+            >
+              🍫
+            </div>
+            <h4 class="text-2xl font-semibold mb-2">Dark Chocolate</h4>
+            <p>Rich, smooth, and perfect for chocolate lovers.</p>
+          </div>
+          <div
+            class="bg-brown-100 rounded-xl p-6 shadow-lg hover:scale-105 transition"
+          >
+            <div
+              class="w-24 h-24 bg-brown-300 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-brown-700"
+            >
+              🍫
+            </div>
+            <h4 class="text-2xl font-semibold mb-2">Milk Chocolate</h4>
+            <p>Classic, creamy, and delightfully sweet.</p>
+          </div>
+          <div
+            class="bg-brown-100 rounded-xl p-6 shadow-lg hover:scale-105 transition"
+          >
+            <div
+              class="w-24 h-24 bg-brown-300 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-brown-700"
+            >
+              🍫
+            </div>
+            <h4 class="text-2xl font-semibold mb-2">Chocolate Truffles</h4>
+            <p>Luxurious handmade truffles for special moments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brown-50">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-4xl font-bold text-brown-700 mb-6">About Us</h3>
+        <p class="text-lg text-brown-700">
+          At ChocoDelight, we craft chocolates using only the finest
+          ingredients. Our mission is to bring joy and sweetness to every
+          chocolate lover's life.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-yellow-100">
+      <div class="max-w-md mx-auto px-4 bg-brown-50 rounded-xl shadow-lg p-8">
+        <h3 class="text-3xl font-bold text-brown-700 mb-6 text-center">
+          Contact Us
+        </h3>
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-3 rounded border border-brown-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-3 rounded border border-brown-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+          <textarea
+            placeholder="Your Message"
+            class="w-full p-3 rounded border border-brown-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-brown-700 text-white py-3 rounded font-semibold hover:bg-brown-600 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-700 text-white py-6 text-center">
+      &copy; 2025 ChocoDelight. All Rights Reserved.
+    </footer>
+  </body>
 </html>
